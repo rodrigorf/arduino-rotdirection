@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="RotationDirection : Código de controle dos sensores hall para detecção da direção de rotação">
+    <meta name="description" content="RotySense : Código de controle dos sensores hall para detecção da direção de rotação">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>RotationDirection</title>
+    <title>RotySense</title>
   </head>
 
   <body>
@@ -18,7 +18,7 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/rodrigorf/arduino-rotdirection">View on GitHub</a>
 
-          <h1 id="project_title">RotationDirection</h1>
+          <h1 id="project_title">RotySense</h1>
           <h2 id="project_tagline">Código de controle dos sensores hall para detecção da direção de rotação</h2>
 
             <section id="downloads">
@@ -39,29 +39,31 @@
 <h3>
 <a id="problema" class="anchor" href="#problema" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Problema</h3>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+<p>Uma empresa de engenharia civil que trabalha com bombas hidráulicas para rebaixamento de lençol e preparo de fundações em construções, relatou que quando uma de suas bombas é levada para um local de uma obra e vai ser conectada, dependendo de como está a fase das conexões, o motor pode girar em sentido horário ou anti-horário, no entanto, isto pode ser um grande problema já que a ideia é que as bombas suguem a água de um determinado local e joguem para fora, bombear no sentido contrário não drenaria o terreno, sem contar que como a água não estaria passando por dentro da bomba isto poderia sobrecarrega-la e prejudicar o tempo de vida da mesma. Como as bombas foram construídas pela equipe interna, não possuem recursos eletrônicos sofisticados que pudessem notificar este tipo de situação, então a  ideia é dar uma forma de saber para qual lado a bomba esta girando assim que seja feita a conexão elétrica, para poder alertar os operários sobre o problema de forma imediata.</p>
 
 <h3>
 <a id="proposta" class="anchor" href="#proposta" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Proposta</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>A propsota escolhida para resolver o problema é utilizar sensores de Efeito Hall, a ideia é acoplar três sensores destes sensores e colocar um ímã preso no volante da bomba que ativará estes sensores em sequencia quando começar a girar.  Com o ímã acoplado ao volante, ao passar pelo sensor, o mesmo identifica a mudança no campo magnético, desta forma é possível verificar o sentido do giro, dependendo da sequencia com que os sensores foram ativados. Este modelo é interessante pois permitiria uma fácil instalação em todas as 20 bombas existentes na empresa sem precisar modifica-las.</p>
+
+<p><img src="https://rodrigoreisf.files.wordpress.com/2016/08/sensor1.jpg?w=676" alt="esqema sensores bomba"></p>
 
 <h3>
 <a id="autores-e-colaboradores" class="anchor" href="#autores-e-colaboradores" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Autores e Colaboradores</h3>
 
-<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>O projeto está sendo desenvolvido por <a href="https://br.linkedin.com/in/rodrigorferreira">Rodrigo R Ferreira</a> e <a href="http://www.escavador.com/sobre/7281315/alana-de-santana-correia">Alana S Correia</a> com apoio técnico do engenheiro civil Tennyson F. S. Neto.</p>
 
 <h3>
 <a id="suporte-e-contato" class="anchor" href="#suporte-e-contato" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Suporte e Contato</h3>
 
-<p>Caso queria saber mais detalhes sobre o projeto, acesse o blog <a href="https://rodrigoreisf.com.br/2016/08/11/arduino-direcao-de-rotacao/">rodrigoreisf</a></p>
+<p>Caso queria saber mais detalhes sobre o projeto, acesse o blog <a href="https://rodrigoreisf.com.br/2016/08/11/arduino-direcao-de-rotacao/">rodrigoreisf</a> ou entre em contato através do email <a href="mailto:rodrigorf33@gmail.com">rodrigorf33@gmail.com</a></p>
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">RotationDirection maintained by <a href="https://github.com/rodrigorf">rodrigorf</a></p>
+        <p class="copyright">RotySense maintained by <a href="https://github.com/rodrigorf">rodrigorf</a></p>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
